@@ -131,6 +131,17 @@ button.switch:hover {
 }
 
 #day {
-    float: top;
-    margin: 0 0 0 0;
+    opacity: 1;
+    transition: all 2s;
+}
+#day.switch {
+    opacity: 0;
+}
+
+#night {
+    opacity: 0;
+}
+
+#night.switch {
+    opacity: 1;
 }
