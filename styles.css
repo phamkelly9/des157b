@@ -131,6 +131,8 @@ button.switch:hover {
 #day {
     opacity: 1;
     transition: all 2s;
+    width: "50%";
+    height:"70%";
 }
 #day.switch {
     opacity: 0;
@@ -138,6 +140,8 @@ button.switch:hover {
 
 #night {
     opacity: 0;
+    width: "50%";
+    height:"70%";
 }
 
 #night.switch {
