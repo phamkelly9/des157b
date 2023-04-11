@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(103, 103, 103);
+    transition: all 2s;
+}
+
+body.switch {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    transition: all 2s;
+    background-image:url("file:///Users/kellypham/Downloads/images/day.jpg");
+}
+
+#banner.switch {
+    color: rgb(0, 0, 0);
+    transition: all 2s;
+    background-color: rgb(0, 0, 0);
+    background-image:url("file:///Users/kellypham/Desktop/github/home%20is/images/night.png");
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    border: 1px rgb(235, 235, 235) dashed;
+    margin: 0 .25em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(170, 170, 170);
+}
+
+section a:hover {
+    background-color: rgb(223, 223, 223);
+    color: #333;
+    border-radius: 10px;
+    
+}
+
+section.switch a {
+    color: #8c8c8c;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    border-radius: 10px;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: transparent;
+    color: #333;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(213, 213, 213);
+    cursor: pointer;
+}
+
+button.switch {
+    background-color: rgb(0, 0, 0);
+    border-color: #ffffff;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+button.switch:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
+
+#day {
+    opacity: 1;
+    transition: all 2s;
+}
+#day.switch {
+    opacity: 0;
+}
+
+#night {
+    opacity: 0;
+}
+
+#night.switch {
+    opacity: 1;
+}
