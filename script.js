@@ -12,8 +12,8 @@
             body.className = 'switch';
             banner.className = 'switch';
             button.className = 'switch';
-            day.className = 'switch';
-            night.className = 'switch';
+            // day.className = 'switch';
+            // night.className = 'switch';
             for (const section of sections) {
                 section.className = 'switch';
             }
@@ -21,9 +21,10 @@
         } else {
             body.removeAttribute('class');
             banner.removeAttribute('class');
+            // banner.style.backgroundImage = 'url(images/night.png)';
             button.removeAttribute('class');
-            day.removeAttribute('class');
-            night.removeAttribute('class');
+            // day.removeAttribute('class');
+            // night.removeAttribute('class');
             for (const section of sections) {
                 section.removeAttribute('class');
             }
