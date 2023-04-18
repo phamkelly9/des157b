@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 60px;
+}
+
+.row .left {
+    overflow: hidden;
+}
+
+.row .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .right {
+    display: flex;
+    align-items: center;
+}
+
+.row .right  .content p{
+    font-family: 'Schoolbell', cursive;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+
+.row .right  .content h1{
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 50px;
+    line-height: 80px;
+    padding-bottom: 15px;
+}
+
