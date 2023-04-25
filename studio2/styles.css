@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 1px solid lightblue;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.one {
+    background-color: white;
+}
+
+.two {
+    background-color: rgb(54, 54, 54);
+}
+
+.three {
+    background-color: rgb(168, 117, 50);
+}
+
+.four {
+    background-color: rgb(168, 117, 50);
+}
+
+.five {
+    background-color: rgb(255, 247, 204);
+}
+
+.six {
+    background-color: rgb(71, 84, 43);
+}
+
+.seven {
+    background-color: rgb(71, 84, 43);
+}
+
+.eight {
+    background-color: rgb(71, 84, 43);
+}
+
+.nine {
+    background-color: rgb(251, 237, 252);
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+a span {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 400%;
+    color: black;
+    font-weight: 1000;
+    position: relative;
+    top: 20px;
+    animation: bounce 1.5s linear infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(0px);
+    }
+    15% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(0px);
+    }
+}
