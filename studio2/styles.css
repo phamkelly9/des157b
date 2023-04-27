@@ -96,3 +96,35 @@ a span {
         transform: translateY(0px);
     }
 }
+
+back {
+    position: absolute ;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    padding: 12px;
+    background-color: transparent;
+    color: #333;
+}
+
+back a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    font-family: 'Schoolbell', cursive;
+    font-size: 20px;
+}
+
+back a:hover {
+    color: #333;
+    border-radius: 10px;
+    
+}
+
+.fa-fork-knife {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+}
