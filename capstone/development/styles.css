@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Rubik Puddles', cursive;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 50px;
+}
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+body {
+    place-items: center;
+} 
+
+p {
+    padding-top: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-size: 20px;
+    font-family: 'Schoolbell', cursive;
+}
+
+back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px;
+    background-color: transparent;
+    color: #333;
+}
+
+back a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+    font-family: 'Schoolbell', cursive;
+    font-size: 20px;
+}
+
+back a:hover {
+    color: #333;
+    border-radius: 10px;
+    
+}

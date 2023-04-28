@@ -21,6 +21,7 @@ section {
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    position: relative;
 }
 
 .one {
@@ -44,15 +45,15 @@ section {
 }
 
 .six {
-    background-color: rgb(186, 200, 160  );
+    background-color: #55613D
 }
 
 .seven {
-    background-color: rgb(186, 200, 160 );
+    background-color: #55613D
 }
 
 .eight {
-    background-color: rgb(186, 200, 160 );
+    background-color: #55613D
 }
 
 .nine {
@@ -127,4 +128,15 @@ back a:hover {
     top: 20px;
     right: 20px;
     position: absolute;
+}
+
+.review {
+    position: relative;
+}
+
+.review:hover .back{
+    transform: rotateY(180deg);
+}
+.review:hover .front{
+    transform: rotateY(0deg);
 }
