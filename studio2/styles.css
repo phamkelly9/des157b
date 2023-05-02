@@ -24,12 +24,16 @@ section {
     position: relative;
 }
 
-.one {
+.start {
     background-color: white;
 }
 
-.two {
+.one {
     background-color: rgb(234, 234, 234);
+}
+
+.two {
+    background-color: rgb(234, 206, 161 );
 }
 
 .three {
@@ -37,11 +41,11 @@ section {
 }
 
 .four {
-    background-color: rgb(234, 206, 161 );
+    background-color: rgb(255, 251, 230 );
 }
 
 .five {
-    background-color: rgb(255, 251, 230 );
+    background-color: #55613D
 }
 
 .six {
@@ -53,10 +57,6 @@ section {
 }
 
 .eight {
-    background-color: #55613D
-}
-
-.nine {
     background-color: rgb(251, 237, 252);
 }
 
@@ -140,3 +140,8 @@ back a:hover {
 .review:hover .front{
     transform: rotateY(0deg);
 }
+
+p {
+    font-family: Schoolbell, cursive;
+}
+

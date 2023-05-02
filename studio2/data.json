@@ -3,56 +3,56 @@
 		"date": "2-20-23",
 		"time": "11:29pm",
 		"place": "Hongdae Pocha",
-		"dishes/drinks": "Pork Plate",
+		"dish": "Pork Plate",
 		"rating": "6/10"
 	},
 	"two" :{
 		"date": "4-1-23",
 		"time": "2:43pm",
 		"place": "Nép",
-		"dishes/drinks": "Ube Coffee and Salted Egg Yolk Coffee",
+		"dish": "Ube Coffee and Salted Egg Yolk Coffee",
 		"rating": "10/10"
 	},
 	"three": {
 		"date": "4-1-23",
 		"time": "2:43pm",
 		"place": "Nép",
-		"dishes/drinks": "Banh Mi Chao",
+		"dish": "Banh Mi Chao",
 		"rating": "9/10"
 	},
 	"four" : {
 		"date": "4-21-23",
 		"time": "3:18pm",
 		"place": "Hu Tieu Nam Vang",
-		"dishes/drinks": "Hu Tieu Nam Vang",
+		"dish": "Hu Tieu Nam Vang",
 		"rating": "9.5/10"
 	},
 	"five" : {
 		"date": "4-21-23",
 		"time": "9:08pm",
 		"place": "La Casa Mia",
-		"dishes/drinks": "Takoyaki",
+		"dish": "Takoyaki",
 		"rating": "7/10"
 	},
 	"six" : {
 		"date": "4-21-23",
 		"time": "9:08pm",
 		"place": "La Casa Mia",
-		"dishes/drinks": "Salmon Shimeji Mushroom Pasta",
+		"dish": "Salmon Shimeji Mushroom Pasta",
 		"rating": "8/10"
 	},
 	"seven" : {
 		"date": "4-21-23",
 		"time": "9:08pm",
 		"place": "La Casa Mia",
-		"dishes/drinks": "Matcha Parfait",
+		"dish": "Matcha Parfait",
 		"rating": "7/10"
 	},
 	"eight" : {
 		"date": "4-23-23",
 		"time": "11:35am",
 		"place": "Starbucks",
-		"dishes/drinks": "Iced Matcha Latte with Sweet Vanilla Foam and Strawberry Puree",
+		"dish": "Iced Matcha Latte with Sweet Vanilla Foam and Strawberry Puree",
 		"rating": "9/10"
 	}
 }
