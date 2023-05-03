@@ -135,13 +135,54 @@ back a:hover {
 }
 
 .review:hover .back{
-    transform: rotateY(180deg);
+    position: absolute;
+    transform: rotateY(0deg);
+    top: 50%;
+    left:50%;
 }
 .review:hover .front{
-    transform: rotateY(0deg);
+    position: absolute;
+    transform: rotateY(180deg);
+    top: 50%;
+    left:50%;
 }
 
 p {
     font-family: Schoolbell, cursive;
+    position: relative;
+}
+
+/* .back {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+} */
+
+.back, .front {
+    backface-visibility: hidden; 
+    transition: 0.7s;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.back {
+    position: absolute;
+    
+    background-color: white;
+    transform: rotateY(-180deg);
+    height: 450px;
+    width: 450px;
+}
+
+#latte {
+    transform: rotate(8deg);
+} 
+
+#tako {
+    transform: rotate(-20deg);
 }
 
