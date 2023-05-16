@@ -32,6 +32,7 @@ section {
     background-color: rgb(234, 234, 234);
 }
 
+/* from glenda: use mulitple selectors for repeated code, such as .two, .three {background-color: rgb(234, 206, 161 ); */
 .two {
     background-color: rgb(234, 206, 161 );
 }
@@ -44,6 +45,7 @@ section {
     background-color: rgb(255, 251, 230 );
 }
 
+/* from glenda: use mulitple selectors */
 .five {
     background-color: #55613D
 }
@@ -60,6 +62,7 @@ section {
     background-color: rgb(251, 237, 252);
 }
 
+/* from glenda: style just the a like this: a {text-decoration:none;} */
 a:link {
     text-decoration: none;
 }
@@ -98,8 +101,10 @@ a span {
     }
 }
 
+/* from glenda: back is not an HTML element */
 back {
-    position: absolute ;
+    /* glenda removed space between absolute and ; */
+    position: absolute;
     position: sticky;
     top: 20px;
     left: 20px;
@@ -134,22 +139,50 @@ back a:hover {
     position: relative;
 }
 
-.review:hover .back{
-    position: absolute;
-    transform: rotateY(0deg);
-    top: 50%;
+.back, .front {
+    backface-visibility: hidden; 
+    transition: 0.7s;
+    /* position: absolute; */
+    border-radius: 50%;
+    /* top: 50%;
     left:50%;
+    transform: translate(-50%, -50%); */
 }
-.review:hover .front{
-    position: absolute;
-    transform: rotateY(180deg);
+
+/* from glenda; .back was declared twice so I combined the properties here */
+.back{
+    position: absolute; 
     top: 50%;
-    left:50%;
+    left: 50%;
+    /* from glenda: added display:flex and centering properties here so that the contents (the paragraph) are centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    /* from glenda: multiple transform properties get combined as one value separated by spaces */
+    transform: translate(-50%, -50%) rotateY(180deg) ;
+    
+}
+.review:hover .back {
+    /* from glenda: need to include the translate again even though it didn't change. By not including it, the element is no longer translated, which knocks it off center. This was the main problem */
+    transform: translate(-50%, -50%) rotateY(0deg);
+}
+.front{
+    /* from glenda: commented out because the front does not need to be positioned */
+    /* position: absolute; */
+    /* top: 50%;
+    left:50%; */
+}
+
+.review:hover .front{
+    transform: rotateY(180deg);
 }
 
 p {
     font-family: Schoolbell, cursive;
-    position: relative;
+    /* position: relative; */
 }
 
 /* .back {
@@ -158,25 +191,6 @@ p {
     left:50%;
     transform: translate(-50%, -50%);
 } */
-
-.back, .front {
-    backface-visibility: hidden; 
-    transition: 0.7s;
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-}
-
-.back {
-    position: absolute;
-    
-    background-color: white;
-    transform: rotateY(-180deg);
-    height: 450px;
-    width: 450px;
-}
 
 #latte {
     transform: rotate(8deg);

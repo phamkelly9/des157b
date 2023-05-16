@@ -14,6 +14,7 @@
 <body>
     <!-- <back><a href="index.html"> &#x2190; back to home</a></back> -->
     <div class="container">
+        <!-- from glenda: back is not an HTML element; I don't think this will validate -->
         <back><a href="index.html"> &#x2190; back to home</a></back> 
         <i class="fa-solid fa-fork-knife"></i>
         <section class="start">
@@ -36,6 +37,7 @@
                  <div class="front">
                     <img src="images/first.png" alt="pork plate">
                 </div> 
+                <!-- from glenda: id's can only be used once -->
                 <div class="back" id="pocha">
                     <p>some text</p>
                 </div>
@@ -107,31 +109,11 @@
                         <img src="images/eighth.png" alt="pork plate">
                     </div> 
                     <div class="back" id="pocha">
+                        <!-- from glenda: this text doesn't look as good as the others because there is a lot more content in the JSON object for the key "dish" of "eight:" -->
                         <p>some text</p>
                     </div>
                 </div>
             </section>
-        <!-- <section class="three">
-            <img src="images/second.png" alt="coffee">
-        </section>
-        <section class="four">
-            <img src="images/third.png" alt="banh mi chao">
-        </section>
-        <section class="five">
-            <img src="images/fourth.png" alt="hu tieu">
-        </section>
-        <section class="six">
-            <img src="images/fifth.png" alt="takoyaki">
-        </section>
-        <section class="seven">
-            <img src="images/sixth.png" alt="salmon noodles">
-        </section>
-        <section class="eight">
-            <img src="images/seventh.png" alt="matcha parfait">
-        </section>
-        <section class="nine">
-            <img src="images/eighth.png" alt="matcha latte">
-        </section> -->
     </div>
     <script src="script.js"></script>
 </body>
