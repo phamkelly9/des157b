@@ -1,0 +1,21 @@
+body {
+    background-color: #FFFCF3;
+}
+
+h1 {
+    text-align: center;
+    color: #668861;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 6vh;
+}
+
+#newbtn {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 30px;
+    background-color: #E7B3A2;
+    color: white;
+    filter: drop-shadow(1px 1px 1px #d9dbe2);
+}
