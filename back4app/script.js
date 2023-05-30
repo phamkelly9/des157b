@@ -10,9 +10,9 @@ const addFriendForm = document.getElementById("add-friend");
 const editFriendForm = document.getElementById("edit-friend");
 const friendList = document.querySelector("main ol");
 
-newwBtn.addEventListener("click", function(event){
+newBtn.addEventListener("click", function(event){
     event.preventDefault();
-    addFriendForm.className = "add-friend-onscreen";
+    document.getElementById('name').className = 'onscreen';
 })
 
 addFriendForm.addEventListener("submit", function(event){
