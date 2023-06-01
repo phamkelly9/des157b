@@ -12,7 +12,7 @@ const friendList = document.querySelector("main ol");
 
 newBtn.addEventListener("click", function(event){
     event.preventDefault();
-    document.getElementById('name').className = 'onscreen';
+    addFriendForm.className = "add-friend-onscreen";
 })
 
 addFriendForm.addEventListener("submit", function(event){

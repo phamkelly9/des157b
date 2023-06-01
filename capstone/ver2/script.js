@@ -1,7 +1,12 @@
 Parse.initialize("5QcrVqeODVexkF0PnbxIofIs6VvdClJBHGDR54LB","xtLarTXGrYtIlcNit1vLHzgrwC5I11QE9DnuA3CU"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-    Parse.serverURL = 'https://parseapi.back4app.com/'
+Parse.serverURL = 'https://parseapi.back4app.com/'
 
-const newBtn = document.getElementById("newbtn");
+AOS.init();
+
+(function(){
+    'use strict';
+
+    const newBtn = document.getElementById("newbtn");
 const addPost = document.getElementById("add-post");
 const postList = document.querySelector("main ol");
 
@@ -55,3 +60,4 @@ async function displayPosts() {
 
 
 displayPosts();
+})
