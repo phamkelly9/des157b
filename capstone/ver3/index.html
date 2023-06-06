@@ -37,8 +37,10 @@
     <section class="usability" class="onscreen">
         <div id="usability-item">
             <img src="images/bunny1.png" alt="bunny">
-            <p>1. Create a new submission <br>
-                2. Add your name.
+            <p id="usability-text">Before entering this site, we would like to acknowledge the Patwin people, who were the original inhabitants of the land. 
+                Today, the Patwin people are made up of 3 federally recognized tribes: the Yocha Dehe Wintun Nation, 
+                the <a href="https://www.colusa-nsn.gov/">Cachil DeHe Band of Wintun Indians of the Colusa Indian Community</a> and 
+                the <a href="https://www.kletseldehe.org/">Kletsel Dehe Wintun Nation.</a>
             </p>
         </div>
     </section>
@@ -55,10 +57,17 @@
     <!-- first question -->
     <section id="name" class="offscreen">
         <div class="form-container">
-          <h2><label for="name">What is your name?</label></h2>
-          <input type="text" id="name" autocomplete="off" />
-          <button class="next" type="submit">&rarr;</button>
+          <label for="name" ></label>
+          <input type="text" id="name" autocomplete="off" placeholder="Enter your name" name="name"/>
+          <button class="next" type="submit"><b>NEXT</b></button>
+        </div>
+    </section>
 
+    <section id="submission" class="offscreen">
+        <div class="form-container">
+          <label for="name" ></label>
+          <input type="text" id="name" autocomplete="off" placeholder="Enter your name" name="name"/>
+          <button class="next" type="submit"><b>NEXT</b></button>
         </div>
     </section>
 

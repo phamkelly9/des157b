@@ -9,6 +9,10 @@ h1 {
     font-size: 6vh;
 }
 
+a {
+    color:#8D7551;
+}
+
 #newbtn {
     border-radius: 50%;
     position: absolute;
@@ -36,6 +40,7 @@ h1 {
 /* usability */
 .usability {
     display: relative;
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -58,8 +63,9 @@ h1 {
     text-align: center;
 }
 
-p {
+#usability-text {
     text-align: center;
+    max-width: 880px;
     font-size: 20px;
     margin: 10px auto;;
     width: 100%;
@@ -67,7 +73,50 @@ p {
     font-family: 'Baloo Thambi 2', cursive;
 }
 
+/* form */
+
 #name {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    color: #342400;
+    width: 75ch;
+    max-width: 1366px;
+    min-width: 800px;
+    margin: 0 auto;
+    font-family: 'Baloo Thambi 2', cursive;;
+}
+
+input {
+    outline: none;
+    width: 40%;
+    height: 100px;
+    border: 0;
+    font-size: 54px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    color: #241900;
+    background: #22c0c300;
+}
+
+.next {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #BFD1BC;
+    border: 0;
+    background-color: #FAF6EA;
+    font-size: 4vh;
+}
+
+.next:hover {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    color: #668861;
+    border: 0;
+    background-color: #FAF6EA;
+    font-size: 4vh;
 }
 
