@@ -6,25 +6,27 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
 (function(){
     'use strict';
     console.log('reading js')
-const newBtn = document.getElementById("newbtn");
-const startBtn = document.getElementById("startbtn");
-const addPost = document.getElementById("add-post");
-const postList = document.querySelector("main ol");
 
-startBtn.addEventListener("click", function(event){
-    event.preventDefault();
-    console.log('clicked new button')
-    document.getElementById('newbtn').className = 'onscreen';
-    document.getElementById('startbtn').className = 'offscreen';
-    document.getElementById('usability-item').className = 'offscreen';
-})
+    // buttons
+    const newBtn = document.getElementById("newbtn");
+    const startBtn = document.getElementById("startbtn");
+
+    const addPost = document.getElementById("add-post");
+    const postList = document.querySelector("main ol");
 
 newBtn.addEventListener("click", function(event){
     event.preventDefault();
     console.log('clicked new button')
     document.getElementById('name').className = 'onscreen';
     document.getElementById('newbtn').className = 'offscreen';
-    document.querySelector('label').className = 'offscreen';
+})
+
+startBtn.addEventListener("click", function(event){
+    event.preventDefault();
+    console.log('clicked new button')
+    document.getElementById('newbtn').className = 'onscreen';
+    document.getElementById('usability-item').className = 'offscreen';
+    document.getElementById('startbtn').className = 'offscreen';
 })
 
 addPost.addEventListener("submit", function(event){

@@ -1,0 +1,73 @@
+body {
+    background-color: #FAF6EA;
+}
+
+h1 {
+    text-align: center;
+    color: #668861;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 6vh;
+}
+
+#newbtn {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 30px;
+    background-color: #8D7551;
+    color: white;
+    filter: drop-shadow(1px 1px 1px #d9dbe2);
+    
+}
+
+
+.offscreen {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.onscreen {
+    opacity: 1;
+    visibility: showing;
+}
+
+
+/* usability */
+.usability {
+    display: relative;
+    text-align: center;
+}
+
+#usability-item {
+    padding-top: 50px;
+    display: absolute;
+}
+
+#startbtn {
+    border-radius: 50%;
+    position: absolute;
+    padding: 30px;
+    /* background-color:white; */
+    filter: drop-shadow(1px 1px 1px #d9dbe2);
+    /* padding-bottom: 6px; */
+}
+
+.center {
+    position: relative;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px auto;;
+    width: 100%;
+    color: #668861;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+#name {
+    position: relative;
+}
+

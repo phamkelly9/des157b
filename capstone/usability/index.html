@@ -16,6 +16,8 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
+    <script src="https://kit.fontawesome.com/b157fb5e7b.js" crossorigin="anonymous"></script>
+
     <!-- stylesheet -->
     <link href="styles.css" rel="stylesheet" />
 
@@ -26,19 +28,20 @@
 </head>
 <body>
 
-    <!-- usability overlay -->
-    <div class="usability">
-        <img class="usability-item" src="images/bunny1.png" alt="bunny">
-        <p class="usability-item">1. Create a new submission <br>
-            2. Add your name.
-        </p>
-    </div>
-
     <header>
         <div class="container">
-            <label>davis &#9829; core</label>
+            <h1>davis &#9829; core</h1>
         </div>
     </header>
+
+    <section class="usability" class="onscreen">
+        <div id="usability-item">
+            <img src="images/bunny1.png" alt="bunny">
+            <p>1. Create a new submission <br>
+                2. Add your name.
+            </p>
+        </div>
+    </section>
     
     <main>
         <ol class="container">
@@ -50,9 +53,9 @@
     <!-- form -->
     <form id="add-post">
     <!-- first question -->
-    <section id="name" class="overlay offscreen">
+    <section id="name" class="offscreen">
         <div class="form-container">
-          <h2 for="name">What is your name?</h2>
+          <h2><label for="name">What is your name?</label></h2>
           <input type="text" id="name" autocomplete="off" />
           <button class="next" type="submit">&rarr;</button>
 
@@ -63,12 +66,13 @@
 
     <!-- button -->
     <div>
-        <a href="#" id="newbtn" class="offscreen"><i class="fas fa-plus fa-3x"></i></a>
+        <a href="#" id="newbtn" class="offscreen"><b><i class="fas fa-plus fa-3x"></i></b></a>
     </div>
 
-    <div>
-        <a href="#" id="startbtn" class="onscreen"><i class="fa-duotone fa-circle-play"></i></a>
+    <div class="center">
+        <a href="#" id="startbtn" class="onscreen"><i class="fa-solid fa-circle-play fa-5x" style="color: #8d7551;"></i></i></i></a>
     </div>
+
      <!-- javascript -->
      <script src="script.js"></script>
 </body>
