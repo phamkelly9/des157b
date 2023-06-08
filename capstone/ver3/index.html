@@ -29,20 +29,23 @@
 <body>
 
     <header>
-        <div class="container">
             <h1>davis &#9829; core</h1>
-        </div>
     </header>
 
-    <section class="usability" class="onscreen">
-        <div id="usability-item">
-            <img src="images/bunny1.png" alt="bunny">
-            <p id="usability-text">Before entering this site, we would like to acknowledge the Patwin people, who were the original inhabitants of the land. 
+    <section class="onscreen" id="intro">
+        <!-- <div id="usability-item"> -->
+            <div>
+                <img src="images/bunny1.png" alt="bunny">
+            </div>
+            <p>Before entering this site, we would like to acknowledge the Patwin people, who were the original inhabitants of the land. 
                 Today, the Patwin people are made up of 3 federally recognized tribes: the Yocha Dehe Wintun Nation, 
                 the <a href="https://www.colusa-nsn.gov/">Cachil DeHe Band of Wintun Indians of the Colusa Indian Community</a> and 
                 the <a href="https://www.kletseldehe.org/">Kletsel Dehe Wintun Nation.</a>
             </p>
-        </div>
+            <div id="start">
+                <p><a href="#">Click here to get started!</a></p>
+            </div>
+        <!-- </div> -->
     </section>
     
     <main>
@@ -55,11 +58,11 @@
     <!-- form -->
     <form id="add-post">
     <!-- first question -->
-    <section id="name" class="offscreen">
+    <section id="nameSection" class="offscreen">
         <div class="form-container">
           <label for="name" ></label>
           <input type="text" id="name" autocomplete="off" placeholder="Enter your name" name="name"/>
-          <button class="next" type="submit"><b>NEXT</b></button>
+          <button class="nextOne" type="submit"><b>NEXT</b></button>
         </div>
     </section>
 
@@ -67,7 +70,7 @@
         <div class="form-container">
           <label for="name" ></label>
           <input type="text" id="name" autocomplete="off" placeholder="Enter your name" name="name"/>
-          <button class="next" type="submit"><b>NEXT</b></button>
+          <button class="nextOne" type="submit"><b>NEXT</b></button>
         </div>
     </section>
 
@@ -75,12 +78,10 @@
 
     <!-- button -->
     <div>
-        <a href="#" id="newbtn" class="offscreen"><b><i class="fas fa-plus fa-3x"></i></b></a>
+        <a href="#" id="newbtn" class="offscreen"><i class="fas fa-plus fa-3x"></i></a>
     </div>
 
-    <div class="center">
-        <a href="#" id="startbtn" class="onscreen"><i class="fa-solid fa-circle-play fa-5x" style="color: #8d7551;"></i></i></i></a>
-    </div>
+    
 
      <!-- javascript -->
      <script src="script.js"></script>

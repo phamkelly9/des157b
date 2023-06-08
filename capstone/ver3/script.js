@@ -9,30 +9,44 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
 
     // buttons
     const newBtn = document.getElementById("newbtn");
-    const startBtn = document.getElementById("startbtn");
+    const startBtn = document.getElementById("start");
 
+    // form buttons
+    const nextOneBtn = document.getElementById("nextOne");
     const addPost = document.getElementById("add-post");
     const postList = document.querySelector("main ol");
 
+// add submission button
 newBtn.addEventListener("click", function(event){
     event.preventDefault();
     console.log('clicked new button')
-    document.getElementById('name').className = 'onscreen';
+    document.getElementById('nameSection').className = 'onscreen';
     document.getElementById('newbtn').className = 'offscreen';
 })
 
+// start button
 startBtn.addEventListener("click", function(event){
     event.preventDefault();
     console.log('clicked new button')
     document.getElementById('newbtn').className = 'onscreen';
-    document.getElementById('usability-item').className = 'offscreen';
-    document.getElementById('startbtn').className = 'offscreen';
+    document.getElementById('intro').className = 'offscreen';
+    // document.getElementById('usability-item').className = 'offscreen';
+    // document.getElementById('startbtn').className = 'offscreen';
 })
 
-addPost.addEventListener("submit", function(event){
+// first next button
+nextOneBtn.addEventListener("click", function(event){
     event.preventDefault();
-    addPost.className = "offscreen";
+    console.log('clicked new button')
+    document.getElementById('submission').className = 'onscreen';
+    document.getElementById('nameSection').className = 'offscreen';
+    document.getElementById('intro').className = 'offscreen';
 })
+
+// addPost.addEventListener("submit", function(event){
+//     event.preventDefault();
+//     addPost.className = "offscreen";
+// })
 
 // async function displayPosts() {
 //     const posts = Parse.Object.extend('Posts');
